@@ -10,10 +10,19 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app"></div>  
   <script type="text/babel">
+    function HelloComponent() {
+      return (
+        <div>
+          <h1>Jooo</h1>
+          <h2>To jest mój komponent </h2>
+        </div>  
+      );
+    }
+
     ReactDOM.render(
-      <h1>Witaj, świecie!</h1>,
+      <HelloComponent/>,
       document.getElementById('app')
     );
   </script>
