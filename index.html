@@ -12,17 +12,20 @@
 <body>
   <div id="app"></div>  
   <script type="text/babel">
-    function HelloComponent() {
+    function HelloComponent({title, content}) {
       return (
         <div>
-          <h1>Jooo</h1>
-          <h2>To jest mój komponent </h2>
+          <h1>{title}</h1>
+          <p>{content}</p>
         </div>  
       );
     }
 
     ReactDOM.render(
-      <HelloComponent/>,
+      <HelloComponent
+        title="Jooo"
+        content="Elo na mojej stronie, więcej wkrótce"
+      />,
       document.getElementById('app')
     );
   </script>
